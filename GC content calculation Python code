@@ -1,0 +1,10 @@
+dnaseq ='''ACACTCGCTTCTGGAACGTCTGAGGTTATCAATAAGCTCCTAGTCCAGACGCCATGGGTCATTTCACAGA
+GGAGGACAAGGCTACTATCACAAGCCTGTGGGGCAAGGTGAATGTGGAAGATGCTGGAGGTTCTGCAAGCAATACAAATAA
+TAAATCTATTCTGCTGAGAGATCACACA'''
+#((g+c)/total nucleotide)*100
+g_count=dnaseq.count("G")
+c_count=dnaseq.count("C")
+total_gc= g_count+c_count
+total_nuc=len(dnaseq)
+gc_percent=(total_gc/total_nuc)*100
+print(gc_percent)
